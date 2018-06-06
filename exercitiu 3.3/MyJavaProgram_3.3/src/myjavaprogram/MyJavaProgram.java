@@ -37,23 +37,11 @@ separat. Acest şir trebuie emis la ieşire. */
             {"jovan", "jovanovic", "2222"},
             {"zoran", "ivanovic", "3333"}
         };
-        String [][] users2 = new String[3][2];
-        
+        String[] names = new String[users.length];
         for (int i = 0; i < users.length; i++) {
-            
-            for (int j = 0; j < users[i].length; j++) {
-                if (j==2) {
-                    continue;
-                   
-                }
-                else{
-                    users[i][j]= users2[i][j];
-                }
-                System.out.println(java.util.Arrays.toString(users2));
-       
-            }
-            
+            names[i] = users[i][0];
         }
-        
+        System.out.println(java.util.Arrays.toString(names));
+
     }
 }
